@@ -7,7 +7,6 @@
 #  Foco Fé Força Paciência
 #  Allah no Comando.
 
-from os import curdir
 from random import *
 from tkinter import *
 import tkinter.ttk as ttk
@@ -31,13 +30,13 @@ class J3A7P6:
         self.gc_ = None
         self.janela = None
         self.gc = Tk()
-        # self.gc.iconbitmap(default='img/adivinhapalavra_gc.ico')
+        # self.gc.iconbitmap(default='./img/adivinhapalavra_gc.ico')
         self.gc.title('  🙋')
         self.gc.resizable(0, 0)
 
         #
-        self.ft = PhotoImage(file=f'{curdir}/img/02.png')
-        self.ft2 = PhotoImage(file=f'{curdir}/img/04.png')
+        self.ft = PhotoImage(file='./img/02.png')
+        self.ft2 = PhotoImage(file='./img/04.png')
         self.nome = StringVar()
         self.nivel = IntVar()
         self.n_tentativas = IntVar()
@@ -58,6 +57,49 @@ class J3A7P6:
                         'REFLECT', 'HELP', 'CAUTION', 'ANXIETY', 'LIVE', 'MODERN', 'ASTUTE', 'ELEGANCE', 'DYNAMIC', 'GOODNESS', 'USEFUL', 'HEALTHY', 'GENUINE', 'PROSPERITY', 'JUSTICE', 'BENEFIT',
                         'ADVANTAGE',
                         'PRETTY', 'WONDERFUL']
+            showinfo("Caution", "For a better gaming experience read the instructions in the options menu. \nThanks for your support! - ArtesGC")
+            palavra_ = ['ATTENTIOUS', 'PLEASANT', 'LOVELY', 'KIND', 'FRIENDLY', 'LOVING', 'AUTHENTIC', 'ANIMATED', 'JOYFUL', 'FRIENDLY', 'FRIEND', 'AFFECTIVE',
+                        'AFFECTIVE', 'ACCOMMODATING', 'ATTRACTIVE', 'ADVENTURE', 'BOLD', 'AUSPICIOUS', 'APPLIED', 'ALTRUIST', 'ASSERTIVE', 'ATTENTION',
+                        'FIT', 'ASTUTE', 'WITTY', 'WISE', 'AMAZING', 'ADMIRABLE', 'AIRY', 'ADONISAFORTUNATE', 'CAREFUL', 'ANGELIC', 'OPEN', 'ACCESSIBLE',
+                        'GOOD', 'KINDNESS', 'PRETTY', 'BEAUTIFUL', 'COOL', 'BLESSED', 'HARD-WORKER', 'BASED', 'MERITORIOUS', 'BENEFACTOR', 'BENEVOLENT', 'BRILLIANT',
+                        'BRIOUS', 'PLAYFUL', 'BOMBASTIC', 'BEAUTY', 'BENEFICIAL', 'BENIGN', 'LIKEABLE', 'CALM', 'WARM', 'FELLOW', 'CANDIDATE', 'CAPABLE',
+                        'CHARITABLE', 'CHARISMATIC', 'CAPTIVATING', 'CAUTIOUS', 'GENTLEMAN', 'HEAVENLY', 'CENTERED', 'CHARMING', 'SMELLY', 'CHIC', 'FUNNY', 'AWARE',
+                        'CIRCUMSPECT', 'CIVIC', 'CIVIL', 'CIVILIZED', 'CLAIRVOYANT', 'CLEMENT', 'COHERENT', 'COLLABORATOR', 'COLLEAGUE', 'COMEDY', 'COMPANION', 'COMPASSIONATE',
+                        'COMPETENT', 'COMPACENT', 'BEHAVIOR', 'UNDERSTANDING', 'CONFIDENT', 'RELIABLE',  'KNOWLEDGE', 'CONSCIOUS', 'CONVICTED', 'COOPERATOR',
+                        'COURAGEOUS', 'CORDIAL', 'CORRECT', 'CUTS', 'SKULL', 'CREDIBLE', 'GROWED', 'CREATIVE', 'CRITERIOUS', 'CRIVEL', 'CAREFUL', 'CULT', 'FUN', 'DEDICATED', 'DECENT', 'WORTHY',
+                        'DECENT', 'DECIDED', 'BRINGING', 'DELICATE', 'FEARLESS', 'VALIANT', 'GIVEN-AWAY', 'SWEET', 'DOCILE', 'DISTINCT', 'STRAIGHT', 'GIFTED',
+                        'AVAILABLE', 'DYNAMIC', 'DILIGENT', 'DISCREET', 'DIPLOMATIC', 'DISCIPLINED', 'DIRECT', 'DEVOTEE', 'DREAMLIKE', 'GOD', 'STUNNING',
+                        'DESIRAVELABLE', 'DEVELOPED', 'UNEMPLOYED', 'EDUCATED', 'EFFICIENT', 'EFFECTIVE', 'ELEGANT', 'ELOCQUENT', 'EMANCIPATED', 'EMINENT', 'EMPATHIC', 'COMMITTED',
+                        'EXCITED', 'ENTREPRENEUR', 'ENCHANTING', 'ENCOURAGING', 'INGENIOUS', 'HUMOROUS', 'UNDERSTANDING', 'ENTHUSIASMED', 'ENTHUSIAST', 'BALANCED', 'SLENDER',
+                        'SCARULOSOUS', 'EMPHASIZED', 'CAREFUL', 'AWESOME', 'SPECIAL', 'SPECIALIST', 'HOPEY', 'CLEVER', 'SPECTACULAR', 'SPIRITUOUS', 'SPLENDID',
+                        'SPLENDOROUS', 'SPONTANEOUS', 'VERTIGINOUS', 'ETERNAL', 'ENVOLVED', 'EXCELLENT', 'EXAMPLE', 'EXPERIENT', 'EXTRAORDINARY',
+                        'EXTROVERTIDO ', ' EXTREMOSO ', ' EXUBERANTE ', ' EXULTANT ', ' FAITHFUL ', 'STRONG', 'FRANCO', 'FRONTAL', 'FIRM', 'FANTASTIC', 'PHENOMENAL', 'FABULOUS', 'FASCINANTE',
+                        'FORMIDAVEL', 'FIDEDIGNO', 'FORMOSO', 'FOFO', ' HAPPY ', ' FELIZARDO ', ' FACEIRO ', ' FERVOROSO ', ' GENTIL ', ' GENEROSO ', ' GENUINO ', ' GRACIOSO ', ' GRANDE ',
+                        ' GRANDIOSO ', ' GENIO ', ' GENIAL ', ' GALANTE ', 'CAT', 'YUMMY', 'GLORIOUS', 'GLAMOROUS', 'GIANT', 'GIANT', 'WARRIOR', 'HOOKER', 'GRATEFUL', 'HONEST', 'HONORED', 'HUMAN',
+                        ' HONROSO ', ' HONORAVEL ', ' HEROI ', ' HEROICO ', ' HABIL ', ' HABILIDOSO ', ' HILARIO ', ' HILARIANTE ', ' HOSPITALEIRO ', ' HUMANITARIO ', ' HOSPEDEIRO ', ' HUMILDE ',
+                        ' HUMILDOSO ', ' INTELLIGENTE ', ' IMPORTANT ', ' INTEGRO ', ' INCRIVEL ', ' ILLUSTRE ', ' INTERESTING ', 'IMPRESSIVE', 'ODD', 'IDEAL', 'IMPONENT', 'IMAGINATIVE', 'IMPECCABLE',
+                        'IRREVERENT', 'IRRESISTIBLE', 'INEQUALABLE', 'IMPARENT', 'IDONEO', 'INDEPENDENT', 'INSPIRING ', ' INTERVENTIVE ', ' INTUITIVE ', ' INTENSE ', ' INTELECTUAL ', ' INSTRUCTED ',
+                        ' IMMORTAL ', ' IMPAVITED ', ' IMMACULATE ', ' IMALICATE ', ' IMPELLABLE ', ' IMPARAVEL ', ' UNABALABLE ', 'INCANSAVEL', 'UNBEATABLE', 'INVINCIBLE', 'INSUBMISSO',
+                        'INSUBORNAVEL', 'INVULNERAVEL', 'INCURRUPTIVEL', 'INCORRUPTO', 'IMPRESCINDIVEL', 'INDISPENSAVEL', 'JUSTO', 'YOUNG', 'YOUNG', 'YOUNG', ' JOIA ', ' JEITOSO ', ' JUBILANTE ',
+                        ' JUBILOSO ', ' JANOTA ', ' JUSTICEIRO ', ' LAAL ', ' LEGAL ', ' LINDO ', ' FREE ', ' FIGHTER ', ' LOUVAVEL ', 'LAUDAVEL', 'LARGO', 'LEGITIMO', 'LUCIDO', 'LISONJEIRO',
+                        'LIBERAL', 'LIBERTO', 'LICITO', 'LIDER', 'LETRADO', 'LABORIOSO', 'WONDERFUL', 'MAGNIFICENT ', ' MAGNANIMO ', ' MAJESTOSO ', ' MAGNIFICENTE ', ' MA IOR ', ' BEST ', ' MAXIMO ',
+                        ' MERECEDOR ', ' MANEIRO ', ' MEIGO ', ' MIMOSO ', ' MODESTO ', ' MODICO ', ' MATERNAL ', ' MAVIOSO ', ' MOTIVADO ', ' MARCANTE ', 'MAGICO', 'MAGNO', 'MAGISTRAL', 'MAESTRAL',
+                        'MERITORIO', 'MODERNO', 'MODERATE', 'MATURE', 'METICULOSO', 'MINUTIOUS', 'METODICO', 'MIRABOLANTE', ' NOTEVEL ', ' NOBLE ', ' NORMAL ', ' NATURAL ', ' NEW ', ' NATURIST ',
+                        ' NUTRID ', ' OBEDIENT ', ' OBJECTIVE ', ' OBSEQUISION ', ' OBSERVATOR ', ' OBSTINATED ', ' OFFICIOUS ', 'OMNIPOTENT', 'OMNISCIENT', 'OPERANT', 'OPPORTUNE', 'ORDER',
+                        'ORGANIZED', 'ORIGINAL', 'OPTIMIST', 'OPTIMIST', 'BOLD', 'PATATO', 'PATIENT', ' PACIFICADOR ', ' PACIFICO ', ' PARTNER ', ' PARCIMONIOUS ', ' PERFECT ', ' EXPERT ',
+                        ' PERSEVERANT ', ' PERSPECTIVE ', ' PERTINAZ ', ' PIEDOSO ', ' PIONEER ', ' POWERFUL ', 'POLIDO', 'PONDERADO', 'PONTUAL', 'PORREIRO', 'PORRETA', 'POSSANTE', 'PRAZENTEIRO',
+                        'PREPARADO', 'PRESTATIVO', 'PRESTAVEL', 'PRESTIGIOSO', 'PREVENIDO', ' PRIMOROSO ', ' PRINCIPE ', ' PRODIGIO ', ' PRODIGIOO ', ' PROEMINENTE ', ' PROEFICIENTE ', ' PROTECTOR ',
+                        ' PROVECTOPR UDENTE ', ' PUJANTE ', ' PURE ', ' WANTED ', ' QUALIFIED ', ' HOT ', ' RESPONSIBLE ', ' RESPECTIVE ', ' RESPECTIVE ', ' RESPECTED ', ' RESPECTFUL ',
+                        ' ACCOMPLISHED ', ' RENOMATED ', 'RESISTANT', 'RESOLUTED', 'RESOLVED', 'RESILIENT', 'ROBUST', 'ROMANTIC', 'RISONHO', 'RADIANT', 'RESPLANDING', 'GLAZING', 'REFINED', 'RATIONAL',
+                        ' REALISTIC ', ' REFLECTED ', ' RELAXED ', ' RECEPTIVE ', ' RECOGNIZED ', ' RAPIDO ', ' RAZOAVEL ', ' SIMPATICO ', ' SABIO ', ' SINCERO ', ' SENSATO ', ' SENSACIONAL ',
+                        ' SAFE ', 'SORRIDENTE', 'SOSSEGADO', 'SUBLIME', 'SOLICITO', 'SOLIDARIO', 'SERENO', 'SENSIVEL', 'SEDUTOR', 'SAGAZ', 'HEALTHY', 'SINGULAR', 'SOCIAVEL', ' SOPHISTICATED ',
+                        ' SERIOUS ', ' DREAMER ', ' HOLY ', ' SENTIMENTAL ', ' KNOWLEDGE ', ' SUBTLE ', ' TALENTED ', ' TENDER ', ' SUIT ', ' QUIET ', ' TRANSPARENT ', ' TOLERANT ', 'WORKER', 'TENAZ',
+                        'TREMENDO', 'TRANSCENDENT', 'TRANSCENDENTAL', 'TOUCHING', 'TRIUMPHANT', 'TRIUMPHAL', 'TRIUMPHAL', 'TITANIC', 'TRAQUESTED', 'TENRO', ' TRANSIGENTE ', ' TEMPERANTE ',
+                        ' TREATVEL ', ' TOLERAVEL ', ' TEMPTOR ', ' TRAN QUILIZANT ', ' UNICO ', ' UNO ', ' URBAN ', ' UNIFIER ', ' ULTRAFANTASTICO ', ' ULTRACOMPETENTE ', ' ULTRACONFIANTE ',
+                        ' ULTRACORRECTO ', ' ULTRAINDEPENDENTE ', ' ULTRANATURAL ', ' ULTRACROMANTILADO ', ' ULTRACROMANTACADO ', 'ULTRADIVINO', 'ULTRAMODERNO', 'ULTRARRACIONAL', 'TRUE', 'VALENTOUS',
+                        'VALUABLE', 'WINNER', 'VERIDICO', 'VENERAVEL', 'VENTUROSO', 'VISTOSO', ' VIRTUOSO ', ' VERSADO ', ' VERSATIL ', ' VISIONARIO ', ' VITORIOSO ', ' VEEMENTE ', ' VENERADO ',
+                        ' VANGUARDISTA ', ' VALIDO ', ' VELOZ ', ' VIRYL', ' MANLY', ' TRUTHFUL', 'VERBOSE', 'VIBRANT', 'VIGOROUS', 'GREEN', 'VIVID', 'LIVE', 'VIVACIOUS', 'VITAL', 'VIGILANT',
+                        'VULTURE', 'ZEALOUS', 'CARETAKER', ' CAREER']
 
             #
             def palavra_secreta():
@@ -88,6 +130,15 @@ Hii Peace and Blessings of God Be Upon You and All Your Family..
 This Game Consists of Winning the Maximum of Possible Points
 In a Few Attempts
 Guessing Which Word Was Set (LETTER BY LETTER)
+
+For a better game experience:
+    count how many letters have the
+    supposed word identified by the symbols '_' 
+    (refer to the letters of the word)
+    and use the list of words that are hidden
+    in the options menu (Secret Words)..
+    Use them as a reference for your attempts!
+
 May God Enlighten You In This Adventure..
 
 Tip:
@@ -95,10 +146,12 @@ Living Rules;
 """)
 
             def hello():
-                showinfo('About', '''Name: Game Guessing Word (GC)
-Version: 0.3-042020
+                showinfo('About', '''
+Name: Game Guessing Word
+Version: 0.4-012021
 Designer & Programmer: Nurul GC
-Company: ArtesGC, Inc. - https://nurulgc.home.blog''')
+Company: ArtesGC, Inc.
+''')
 
             def en_():
                 if self.root is None:
@@ -140,7 +193,7 @@ Company: ArtesGC, Inc. - https://nurulgc.home.blog''')
 
                 #
                 def confirma(p):
-                    self.rodada.set(abs(self.rodada.get()+1))
+                    self.rodada.set(abs(self.rodada.get() + 1))
                     posicao = 0
 
                     def novo():
@@ -148,11 +201,11 @@ Company: ArtesGC, Inc. - https://nurulgc.home.blog''')
                         jogo()
 
                     #
-                    if self.chute.get() in palavra:
+                    if self.chute.get().upper() in palavra:
                         for ltra in palavra:
-                            if self.chute.get() == ltra:
-                                self.pontos.set(abs(self.pontos.get()+100))
-                                letra[posicao] = self.chute.get()
+                            if self.chute.get().upper() == ltra:
+                                self.pontos.set(abs(self.pontos.get() + 100))
+                                letra[posicao] = self.chute.get().upper()
                                 lr.configure(text=f'''Level: {self.nivel.get()} Attempt: {self.rodada.get()} of {self.n_tentativas.get()}
 
 (^.^) Yeahii..
@@ -161,7 +214,7 @@ YOU ARE RIGHT {self.nome.get()}!
 Points {self.pontos.get()}''', fg='blue')
                             posicao += 1
                     else:
-                        self.pontos.set(abs(self.pontos.get()-50))
+                        self.pontos.set(abs(self.pontos.get() - 50))
                         lr.configure(text=f'''Level: {self.nivel.get()} Attempt: {self.rodada.get()} of {self.n_tentativas.get()}
 
 (O_O) Upss..
@@ -181,8 +234,8 @@ Points: {self.pontos.get()}""", fg='green')
                         b.configure(text='Play Again', command=novo, bg='blue', fg='white')
                         b2.grid(row=5, column=2, sticky=W)
                     elif self.rodada.get() == self.n_tentativas.get():
-                        lr.configure(text=f"""(T.T) Sorry {self.nome.get()}
-YOU EXHAUSTED YOUR ATTEMPTS..
+                        lr.configure(text=f"""(T.T) AM SORRY {self.nome.get()}
+YOU HAVE EXHAUSTED ALL ATTEMPTS..
 Hidden Word: {palavra}
 
 • Score
@@ -203,11 +256,10 @@ Points: {self.pontos.get()}""", fg='red')
                 lr.grid(row=2, columnspan=3)
                 Label(f_jogo, text='__________________________________________________', bg='MistyRose1').grid(row=3, columnspan=3)
 
-                Label(f_jogo, text='Type the Letter', bg='MistyRose1', font='consolas 10 bold', underline=9).grid(row=4, column=0)
+                Label(f_jogo, text='Enter the Letter', bg='MistyRose1', font='consolas 10 bold', underline=9).grid(row=4, column=0)
                 e = ttk.Entry(f_jogo, textvariable=self.chute)
                 e.grid(row=4, column=1, sticky=W)
                 e.bind("<Return>", confirma)
-                ToolTip(e, 'Insert Only Maiuscule Letters!')
 
                 b = Button(f_jogo, text='Check', bg='cyan')
                 b.grid(row=4, column=2, sticky=W)
@@ -261,7 +313,7 @@ Points: {self.pontos.get()}""", fg='red')
         #
         Label(self.tab1, text="💻 GUESSING WORD 💻", font='Consolas 12 bold', fg='#d513bc', bg='MistyRose1').grid(row=0, column=0)
         Label(self.tab1, image=self.ft, bg='#d513bc').grid(row=1, column=0, pady=10)
-        f = LabelFrame(self.tab1, bg='MistyRose1',)
+        f = LabelFrame(self.tab1, bg='MistyRose1', )
         f.grid(row=2, column=0)
         Radiobutton(f, text='START ', font='arial 7 bold', command=en, indicatoron=False).grid(row=0, column=0, padx=5, pady=5)
 
