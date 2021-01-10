@@ -8,12 +8,12 @@
 #  Allah no Comando.
 
 from os import curdir
+from random import *
 from tkinter import *
 import tkinter.ttk as ttk
 from tk_tools.tooltips import ToolTip
 from tkinter.messagebox import *
 from tkinter.scrolledlist import ScrolledList
-from random import *
 
 
 class J3A7P6:
