@@ -19,11 +19,11 @@ from tkinter.scrolledlist import ScrolledList
 class J3A7P6:
     """
     Type: PythonSource
-    Name: Jogo Adivinha o Nome
+    Name: Game Guessing Word
     Modified: 18/04/2020 10:00pm
     Created: 31/03/2020 07:00am
-    Version: 0.1-042020 - 0.2-042020 - 0.3-042020
-    Autor: Nurul GC - https://nurulgc.home.blog
+    Version: 0.1-042020 - 0.2-042020 - 0.3-042020 - 0.4-012021
+    Autor: Nurul GC - https://artesgc.home.blog
     cor: (2)MistyRose1, (1)#d513bc
     """
 
